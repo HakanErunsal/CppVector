@@ -2,24 +2,6 @@
 #include <utility>
 #include <new>
 
-// This is a stripped-down version of std::vector.
-//
-// Your task is to implement the vector's interface so that it can be used to
-// contain arbitrary well-behaved elements which may have significant
-// constructors, destructors and copy and move assignment operators.
-//
-// You are allowed to extend the interface in compatible ways to add new
-// functions but this is not required or expected.
-//
-// To keep the test reasonably compact, some features are out of scope:
-// - exception safety
-// - custom allocators
-// - any features beyond C++11
-//
-// Reference:
-// https://en.cppreference.com/w/cpp/container/vector
-
-
 template <typename T, int chunk_size = 1>
 class vector
 {
